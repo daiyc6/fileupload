@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    {# enctype设置不对字符编码 #}
+    <form action="upload" method="POST" enctype="multipart/form-data">
+        <input type="file" name="file" accept=".jpg, .png,.py,.csv,.xls" />
+        <input type="submit" />
+    </form>
+    <hr>
+    <a href="/list">查看已上传的文件</a>
+</body>
+</html>
+

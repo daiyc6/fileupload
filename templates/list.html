@@ -1,0 +1,13 @@
+<head>
+    <title>{{username}}</title>
+</head>
+<body>
+    <h1>{{username}}的文件</h1>
+    
+    <hr>
+<a href="/upload">继续上传我的文件</a>
+<hr>
+{% for filename,path in list %}
+<a>【<a href="/del/{{filename}}">删除</a>】</a><a href="{{path}}">{{filename}}</a></a><hr>
+{% endfor %}
+</body>
